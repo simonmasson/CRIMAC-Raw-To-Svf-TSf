@@ -286,16 +286,16 @@ def calcSv():
 
 
 # Example Usage :
-#   main.py --tfile ./data/CRIMAC_SphereBeam.json --sfile ./data/CRIMAC_Svf.json
-#   main.py --tfile ./data/CRIMAC_SphereBeam.json --sfile ./data/CRIMAC_Svf.json --plots false
-#   main.py --tfile ./data/CRIMAC_SphereBeam.json --sfile none
+#   main.py --tfile ./Data/CRIMAC_SphereBeam.json --sfile ./Data/CRIMAC_Svf.json
+#   main.py --tfile ./Data/CRIMAC_SphereBeam.json --sfile ./Data/CRIMAC_Svf.json --plots false
+#   main.py --tfile ./Data/CRIMAC_SphereBeam.json --sfile none
 if __name__ == '__main__':
 
     # Handle command line parameters
     #
     ap = argparse.ArgumentParser(description='Sv and TS calculations')
-    ap.add_argument("--sfile", default='./data/CRIMAC_Svf.json', help="File containing raw data for Sv calculation")
-    ap.add_argument("--tfile", default='./data/CRIMAC_SphereBeam.json', help="File containing raw data for TS calculation")
+    ap.add_argument("--sfile", default='./Data/CRIMAC_Svf.json', help="File containing raw data for Sv calculation")
+    ap.add_argument("--tfile", default='./Data/CRIMAC_SphereBeam.json', help="File containing raw data for TS calculation")
     ap.add_argument("--plots", choices=['true', 'false'], default='true', help="Show plots or not")
 
     args = ap.parse_args()
